@@ -88,10 +88,11 @@ a{
 }
 
 .btn-entrar{
-  padding: 10px 20px;
+  background-color: #fff;
   border: 1px solid #3790f8;
   border-radius: 5px;
   color: #3790f8;
+  font-size: 16px;
   transition: background-color 0.5s;
 }
 
