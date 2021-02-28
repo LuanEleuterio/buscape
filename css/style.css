@@ -2,6 +2,7 @@ body, p, h1, h2, ul, li, blockquote{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  height: 5000px;
 }
 
 body{
@@ -27,17 +28,24 @@ a{
 
 .header{
   display: flex;
-  flex: 1;
-  background: #ffc600;
-  padding: 5px 0;
-  min-height: 65px;
   align-items: center;
+  width: 100vw;
+  background: #ffc600;
+  min-height: 65px;
+}
+
+.header-fixed{
+  width: 100vw;
+  background: #ffc600;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
 }
 
 .menu-items{
   display: grid;
-  grid-template-columns: 1fr 1fr 10fr 1fr;
-  gap: 20px
+  grid-template-columns: 1fr 1fr 9fr 1fr;
+  gap: 20px;
 }
 
 .btn-menu{
@@ -68,12 +76,17 @@ a{
   font-weight: 400;
 }
 
+.logo{
+  align-self: center;
+  justify-self: center;
+}
+
 .logo img{
   height: 40px;
 }
 
 .search-bar{
-  width: 100%;
+  width: 90%;
   height: 48px;
   border-radius: 500px;
   border: none;
@@ -88,15 +101,38 @@ a{
 }
 
 .btn-entrar{
+  height: 48px;
   background-color: #fff;
   border: 1px solid #3790f8;
   border-radius: 5px;
   color: #3790f8;
   font-size: 16px;
-  transition: background-color 0.5s;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 .btn-entrar:hover{
   background-color: #3790f8;
   color: #fff;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+.aviso-header{
+  width: 100vw;
+  background-color: #333333;
+  padding: 15px 0;
+}
+
+.aviso-header .container{
+  text-align: center;
+}
+
+.aviso-header a{
+  color: #fff;
+  font-weight: 600;
+}
+
+.aviso-header a:hover{
+  text-decoration-line: underline;
 }
