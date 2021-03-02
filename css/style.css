@@ -2,7 +2,6 @@ body, p, h1, h2, ul, li, blockquote{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  height: 5000px;
 }
 
 body{
@@ -17,11 +16,17 @@ a{
   text-decoration: none;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+}
+
 /* ESTILOS GERAIS */
 
 .container{
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* HEADER */
@@ -40,6 +45,7 @@ a{
   padding: 8px 0;
   position: fixed;
   top: 0;
+  z-index: 10  border: 1px solid #CCC;
 }
 
 .menu-items{
@@ -135,4 +141,11 @@ a{
 
 .aviso-header a:hover{
   text-decoration-line: underline;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+.introducao-banner{
+  width: 100vw;
+  background-color: #ffcb37;
 }
