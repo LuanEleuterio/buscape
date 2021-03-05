@@ -1,7 +1,7 @@
 
 if (window.SimpleSlide) {
   new SimpleSlide({
-    slide: "banner-slide",
+    slide: 'banner-slide',
     auto: true,
     time: 5000,
     nav: true,
