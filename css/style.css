@@ -151,6 +151,7 @@ img{
 
 .nav-produtos{
   display: flex;
+  padding: 30px 0;
 }
 
 .options-produtos{
@@ -173,13 +174,13 @@ img{
   align-items: center;
 }
 
-
 .options-produtos a img{
   width: 48px;
   height: 48px;
 }
 
 .options-produtos a{
+  text-align: center;
   color: #7c7c7c;
   transition: color 0.2s;
 }
@@ -190,5 +191,7 @@ img{
 }
 
 .options-produtos a span{
+  display: block;
   font-size: 12px;
+  margin-top: 15px;
 }
