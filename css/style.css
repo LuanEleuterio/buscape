@@ -223,6 +223,7 @@ main{
   box-sizing: border-box;
   padding: 8px;
   width: 200px;
+
 }
 
 .img-produto{
@@ -234,13 +235,17 @@ main{
 
 .nome-produto{
   display: block;
-  width: 150px;
   margin-top: 25px;
   padding: 0 16px;
   font-size: 12px;
   font-weight: 600;
   color: #333333;
   transition: color 0.2s;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 21ch;
+  max-height: 4ch;
 }
 
 .nome-produto:hover{
@@ -270,6 +275,10 @@ main{
   font-size: 12px;
 }
 
+.preco a{
+  font-size: 18px;
+}
+
 .price-produto span:nth-child(even){
   margin: 4px 0;
 }
@@ -292,11 +301,16 @@ main{
   border-radius: 5px;
 
   font-size: 14px;
-  font-weight: 400;
   color: #fff;
   text-align: center;
 
   padding: 10px;
   margin: 0 auto;
   margin-top: 4px;
+
+  transition: background-color 0.2s;
+}
+
+.btn-ver-precos:hover{
+  background-color: #007bff;
 }
