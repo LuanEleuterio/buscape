@@ -196,12 +196,9 @@ img{
 
 /* Produtos */
 
-main{
-  height: 1000px;
-}
-
 .produtos{
   padding: 0 16px;
+  margin: 40px 0;
 }
 
 .produtos h2{
@@ -223,7 +220,6 @@ main{
   box-sizing: border-box;
   padding: 8px;
   width: 200px;
-
 }
 
 .img-produto{
@@ -312,5 +308,84 @@ main{
 }
 
 .btn-ver-precos:hover{
+  background-color: #007bff;
+}
+
+.list-produtos-buscados{
+  display: flex;
+  margin: 10px 0;
+}
+
+.list-produtos-buscados ul{
+  display: flex;
+  margin: 0 auto;
+}
+
+.list-produtos-buscados ul li{
+  box-sizing: border-box;
+  padding: 8px;
+  width: 200px;
+}
+
+.card-produto-buscado{
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow-x: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 0 0 16px;
+}
+
+.img-produto-buscado{
+  height: 120px;
+}
+
+.card-descricao strong{
+  display: block;
+  color:#ffc600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 11px;
+  padding: 0 16px;
+  margin-top: 8px;
+}
+
+.card-descricao h3{
+  font-size: 14px;
+  padding: 0 16px;
+  margin: 8px 0;
+}
+
+.card-descricao p{
+  display: block;
+  height: 48px;
+  
+  color: #333333;
+  font-size: 12px;
+  line-height: 16px;
+
+  margin: 20px 0 8px 0;
+  padding: 0 16px;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-footer a{
+  background-color: #3790f8;
+  border-color: #3790f8;
+  border-radius: 5px;
+  padding: 6px 13px;
+  margin-right: 16px;
+
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+
+  transition: background-color 0.2s;
+}
+
+.card-footer a:hover{
   background-color: #007bff;
 }
