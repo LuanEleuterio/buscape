@@ -23,7 +23,7 @@ img{
 /* ESTILOS GERAIS */
 
 .container{
-  max-width: 1140px;
+  max-width: 1190px;
   margin: 0 auto;
   position: relative;
 }
@@ -464,6 +464,7 @@ img{
   display: block;
   width: 150px;
   font-size: 18px;
+  z-index: 1;
 }
 
 .img-oferta{
@@ -489,6 +490,7 @@ img{
   padding: 6px 18px;
   border-radius: 5px;
 
+  z-index: 1;
   transition: all .2s ease-out;
 }
 
@@ -497,3 +499,45 @@ img{
   background-color: #3790f8;
 }
 
+/* DOWNLOAD APP (BAIXE NOSSO APP) */
+
+.download-app{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.download-app h2{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.download-app p{
+  color: #7c7c7c;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.apps-store{
+  display: flex;
+}
+
+.apps-store a{
+  display: block;
+  background-color: #000;
+  border-radius: 5px;
+  align-self: center;
+  padding: 3px 0;
+}
+
+.apps-store a:first-child{
+  margin-right: 10px;
+}
