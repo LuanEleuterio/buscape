@@ -209,6 +209,7 @@ img{
 .list-produtos{
   display: flex;
   margin: 10px 0;
+  position: relative;
 }
 
 .list-produtos ul{
@@ -311,6 +312,8 @@ img{
   background-color: #007bff;
 }
 
+/* CARD PRODUTOS MAIS BUSCADOS */
+
 .list-produtos-buscados{
   display: flex;
   margin: 10px 0;
@@ -389,3 +392,108 @@ img{
 .card-footer a:hover{
   background-color: #007bff;
 }
+
+/* PRODUTOS COM DESCONTO */
+
+.saldao-desconto{
+  display: flex;
+  font-size: 11px;
+
+  position: absolute;
+}
+
+.saldao{
+  display: flex;
+  align-items: center;
+
+  background: #ffcb37;
+  text-transform: uppercase;
+
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.desconto{
+  background: #ffcb37;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+/* MAIS OFERTAS */
+
+.mais-ofertas{
+  padding: 0;
+}
+
+.mais-ofertas h2{
+  padding: 0 16px;
+}
+
+.mais-ofertas .list-produtos-ofertas ul{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.list-produtos-ofertas{
+  margin: 10px 0;
+}
+
+.list-produtos-ofertas ul li{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 160px;
+  background: #f2f2f2;
+
+  position: relative;
+  box-sizing: border-box;
+
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.title-oferta{
+  display: block;
+  width: 150px;
+  font-size: 18px;
+}
+
+.img-oferta{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.btn-ver-oferta{
+  display: flex;
+  align-self: flex-start;
+  margin: auto 0 0;
+
+  font-size: 14px;
+  color: #3790f8;
+
+  border: 1px solid #3790f8;
+  background-color: transparent;
+  cursor: pointer;
+
+  padding: 6px 18px;
+  border-radius: 5px;
+
+  transition: all .2s ease-out;
+}
+
+.btn-ver-oferta:hover{
+  color: #fff;
+  background-color: #3790f8;
+}
+
