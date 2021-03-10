@@ -23,7 +23,7 @@ img{
 /* ESTILOS GERAIS */
 
 .container{
-  max-width: 1190px;
+  max-width: 960px;
   margin: 0 auto;
   position: relative;
 }
@@ -79,6 +79,7 @@ img{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  margin-left: 10px;
 }
 
 .logo{
